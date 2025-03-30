@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
     <link rel="stylesheet" href="services.css">
+    <!-- Linking Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Liter&display=swap" rel="stylesheet">
+
+    <!-- Link for Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -34,9 +38,54 @@
 
     <!-- START OF SERVICES MAIN CONTENT -->
     <div class="services__main">
+        <div class="slider-container">
+            <!-- Slider List Items -->
+            <div class="slider-wrapper swiper-wrapper">
+                    <div class="slider-item swiper-slide" >
+                        <div class="slide-content">
+                            <!-- <h3 class="slide-subtitle">Premium Services</h3> -->
+                            <h2 class="slide-title">Personalized Workout Plan </h2>
+                            <p class="slide-description">Achieve your fitness goals with a custom workout plan tailored to your needs. Whether you're building strength, improving endurance, or losing weight, our expert-designed routines adapt to your progress and fitness level.</p>
+                            <a href="" class="slide-button"><span>Get Now</span></a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="slider-item swiper-slide">
+                        <div class="slide-content">
+                            <!-- <h3 class="slide-subtitle">Premium Services</h3> -->
+                            <h2 class="slide-title">Precise Nutrition Tracking </h2>
+                            <p class="slide-description">Fuel your body the right way with our advanced nutrition tracking. Log your meals, monitor your calorie intake, and receive personalized recommendations to stay on track with your fitness journey.</p>
+                            <a href="" class="slide-button"><span>Get Now</span></a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="slider-item swiper-slide">
+                        <div class="slide-content">
+                            <!-- <h3 class="slide-subtitle">Premium Services</h3> -->
+                            <h2 class="slide-title">Real-Time Progress Tracking</h2>
+                            <p class="slide-description">Stay motivated with real-time progress tracking. Monitor your workout stats, track your achievements, and adjust your plan instantly to maximize results. Your fitness journey, visualized like never before!</p>
+                            <a href="" class="slide-button"><span>Get Now</span></a>
+                            
+                        </div>
+                    </div>
+            </div>
+
+             <!-- Slider Pagination -->
+             <div class="slider-controls">
+                <ul class="slider-pagination">
+                    <div class="slider-indicator"></div>
+                    <li class="slider-tab">Personalized Workout Plan</li>
+                    <li class="slider-tab">Precise Nutrition Tracking</li>
+                    <li class="slider-tab">Real-Time Progress Tracking</li>
+                </ul>
+            </div>
+        </div>
         
-    </div>
-    <!-- END OF SERVICES MAIN CONTENT -->
-<script src="servicesJS.js"></script>
+        <!-- Linking Swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Linking JavaScript -->
+    <script src="servicesJS.js"></script>
 </body>
 </html>
