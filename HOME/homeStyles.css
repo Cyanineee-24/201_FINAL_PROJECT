@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+.main
+{
+    background-image: url("Images/Home_Background.png");
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+}
+
+ /* START OF NAVIGATION BAR */
+ .navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar__container {
+    display: flex;
+    /*justify-content: space-between;*/
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.navbar__container img
+{
+    border-radius: 50%
+}
+ 
+#navbar_logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844, 0%, #ffb199, 100%);
+    background-size: 100%;;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+    text-decoration: none;
+    font-size: 2rem;
+} 
+.fa-gem {
+    margin-right: 0.5 rem;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;;
+    list-style: none;
+    text-align: center;
+}
+.navbar__item {
+    height: 80px;
+    width: 160px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+.navbar__links {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0;
+    height: 100%;
+}
+.navbar__links:hover {
+    color: rgba(223, 160, 3, 0.897);
+    background: rgba(255, 255, 255, 0.509);
+    transition: all 0.3s ease-in-out;
+}
+/* END OF NAVIGATION BAR */
+
+.header-container
+{
+    color: white;
+    position: relative;
+    top: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header-container h1
+{
+    font-size: 80px;
+    font-weight: 100;
+    margin-bottom: 10px;;
+}
+.header-paragraph
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.trial
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4bc11;
+    margin-top: 40px;
+    margin-left: 90px;
+    height: 60px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}  
+.trial p
+{
+    position: relative;
+    z-index: 2;
+}
+.trial::before
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.trial:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 196, 0, 0.5);
+}
+.trial:hover::before
+{
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+}
