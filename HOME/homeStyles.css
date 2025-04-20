@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Liter", sans-serif;
 }
 .main {
   background-image: url("/Images/Home_Background.png");
   background-size: 100% 100%;
+  background-position: 10px 30px;
   height: 100vh;
   width: 100vw;
 }
@@ -215,6 +216,11 @@
 .trial p {
   position: relative;
   z-index: 2;
+}
+.trial a
+{
+  text-decoration: none;
+  color: white;
 }
 .trial::before {
   content: "";

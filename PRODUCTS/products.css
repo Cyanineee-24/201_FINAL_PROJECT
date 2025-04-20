@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Liter", sans-serif;
 }
 .main {
   background-color: #e4bc11;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
 }
@@ -212,11 +212,11 @@
 .products .product-name {
   font-family: "Caveat", cursive;
   font-size: 50px;
-  color: rgba(223, 160, 3, 0.897);
+  color: #EB8317;
   text-shadow: 0px 2px 4px rgba(223, 160, 3, 0.897);
 }
 .product-background {
-  background-color: rgba(207, 108, 14, 0.897);
+  background-color: #F3C623;
 }
 .products img {
   border-radius: 50%;
@@ -228,13 +228,14 @@
 .products .color {
   margin-top: 20px;
   margin-bottom: 10px;
+  color: black;
 }
 .products .price {
   margin-top: 10px;
 }
 .product1 {
   margin-top: 20px;
-  background-color: white;
+  background-color: #F4F6FF;
   width: 350px;
   box-shadow: 0px 7px 20px black;
   box-shadow: 7px 0px 20px black;
@@ -248,12 +249,13 @@
 }
 .buy {
   margin-top: 10px;
-  background-color: black;
+  background-color: #EB8317;
   color: white;
   border: 1px solid black;
   border-radius: 2px;
   font-size: 30px;
   height: 40px;
+  width: 351px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -267,13 +269,22 @@
 }
 /* END OF PRODUCT*/
 .container-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 70px;
-  width: 100%;
 }
 .shop {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.shop:hover
+{
+  transform: scale(1.25);
 }
 .shop h2 {
   display: flex;

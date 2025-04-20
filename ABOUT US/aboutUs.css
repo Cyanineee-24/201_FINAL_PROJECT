@@ -96,6 +96,89 @@ body {
   height: 100%;
 }
 
+/* media query */
+@media screen and (max-width: 960px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  .navbar__container {
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    transition: all 0.3 ease;
+    height: auto;
+    z-index: -1;
+    background: #131313;
+  }
+  .navbar__menu.active {
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: auto;
+    font-size: 1.6 rem;
+  }
+
+  #navbar__logo {
+    padding-left: 20px;
+  }
+
+  .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+  }
+  .navbar__item {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .navbar__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+  .navbar__toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  #mobile__menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile__menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile__menu.is-active .bar:nth-child(1) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
 /* START OF ABOUT US MAIN */
 
 .aboutUs__main {
