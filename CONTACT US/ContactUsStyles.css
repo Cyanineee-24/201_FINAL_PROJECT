@@ -7,9 +7,9 @@
 }
 .main
 {
-    background-image: url("/Images/ContactUs_Background.png");
-    background-size: 100% 100%;
-    background-position: 0px 10px;
+    background-image: url("/Images/contactus_background.jpg");
+    background-size: cover;
+    background-position: 0px -250px;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
