@@ -110,6 +110,7 @@ body {
   height: auto;
   width: 100%;
   position: relative;
+  margin-bottom: 30px;
 }
 .slider-wrapper .slider-item {
   position: relative;
@@ -250,7 +251,7 @@ body {
 }
 
 .image-section1 {
-  background-image: url("/ABOUT US/AboutUsImages/startup.webp");
+  background-image: url("services_images/band.jpg");
   background-size: cover;
   background-position: center;
   width: 400px;
@@ -261,7 +262,7 @@ body {
 }
 
 .image-section2 {
-  background-image: url("/ABOUT US/AboutUsImages/yoga.jpg");
+  background-image: url("services_images/food.jpg");
   background-size: cover;
   background-position: center;
   width: 400px;
@@ -271,7 +272,7 @@ body {
   display: block;
 }
 .image-section3 {
-  background-image: url("/ABOUT US/AboutUsImages/different.jpg");
+  background-image: url("services_images/progres.jpg");
   background-size: cover;
   background-position: center;
   width: 400px;
@@ -280,16 +281,7 @@ body {
   border: 1px solid white;
   display: block;
 }
-.image-section4 {
-  background-image: url("/ABOUT US/AboutUsImages/healthy.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 400px;
-  height: 300px;
-  border-radius: 50%;
-  border: 1px solid white;
-  display: block;
-}
+
 .image-section {
   margin: 20px;
 }
@@ -311,10 +303,10 @@ article h3 {
 article p {
   font-size: 1.1rem;
   color: white;
+  margin: 35px 0px;
 }
 
 .btn {
-  margin-top: 35px;
 }
 .btn a {
   color: white;
@@ -424,7 +416,7 @@ article p {
   }
   .about {
     flex-direction: column;
-    margin-top: 10px;
+    margin: 30px 0px;
   }
   article {
     margin-top: 10px;
