@@ -5,15 +5,20 @@
     box-sizing: border-box;
     font-family: "Liter", sans-serif;
 }
+html, body
+{
+  height: 100%;
+}
 .main
 {
+    display: flex;
+    flex-direction: column;
     background-image: url("/Images/contactus_background.jpg");
     background-size: cover;
-    background-position: 0px -250px;
+    background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
 }
 .navbar {
     background: #131313;
@@ -179,9 +184,26 @@
     #mobile__menu.is-active .bar:nth-child(1) {
       transform: translateY(-8px) rotate(-45deg);
     }
+
+    .get-in-touch
+    {
+      position: relative;
+      left: -50px;
+    }
+    .footer
+    {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #e4bc11;
+    }
   }
 /*END OF NAVBAR*/
 
+.get-in-touch
+{
+  flex: 1;
+  overflow: hidden;
+}
 .get-in-touch h1
 {
     font-family: "Anton", sans-serif;
@@ -195,7 +217,8 @@
 }
 .footer-container
 {
-    height: 100px;
+    max-height: 205px;
+    min-height: 100px;
     background-color: #e4bc11;
 }
 .footer
@@ -205,14 +228,12 @@
     justify-items: center;
     align-items: center;
     text-align: center;
-    gap: 490px;
     color: black;
-    background-color: #e4bc11;
-    height: 150px;
-    position: absolute;
-    bottom: 0;
-    overflow: hidden;
+    gap: 100px;
     width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 
 }
 .footer h2

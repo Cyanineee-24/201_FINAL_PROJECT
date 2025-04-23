@@ -5,9 +5,9 @@
   font-family: "Liter", sans-serif;
 }
 .main {
-  background-image: url("/Images/Home_Background.png");
+  background-image: url("/Images/Home_Background2.png");
   background-size: cover;
-  background-position: 0px 30px;
+  background-position: center center;
   height: 100vh;
   width: 100vw;
 }
@@ -166,6 +166,27 @@
     cursor: pointer;
   }
 
+  .header-container .header h1
+  {
+    transition: all 0.2s ease;
+    transform: scale(0.7);
+  }
+  .header-container hr 
+  {
+    transition: all 0.2s ease;
+    transform: scale(0.7);scale: 0.7;
+  }
+  .header .header-paragraph
+  {
+    transition: all 0.2s ease;
+    transform: scale(0.7);
+  }
+  .trial
+  {
+    transition: all 0.2s ease;
+    transform: scale(0.9);
+  }
+
   #mobile__menu.is-active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -188,6 +209,22 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: all 0.2s ease;
+}
+.header
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header h1
+{
+  transition: all 0.2s ease;
+}
+.header hr
+{
+  width: 450px;
+  transition: all 0.2s ease;
 }
 .header-container h1 {
   font-size: 80px;
@@ -198,6 +235,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 30px;
+  transition: all 0.2s ease;
 }
 .trial {
   display: flex;
@@ -205,7 +243,6 @@
   align-items: center;
   background-color: #e4bc11;
   margin-top: 40px;
-  margin-left: 90px;
   height: 60px;
   width: 300px;
   position: relative;
