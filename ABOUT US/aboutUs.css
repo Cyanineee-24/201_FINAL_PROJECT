@@ -188,7 +188,7 @@ body {
   display: flex;
   position: relative;
   color: white;
-  padding: 22.5px;
+  /* padding: 22.5px; */
   display: flex;
   flex-direction: column;
 }
@@ -208,13 +208,16 @@ body {
   letter-spacing: 15px;
 }
 .about {
-  width: 100%;
+  width: auto;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 25px 50px;
-  background: linear-gradient(
+  background-color: rgb(36, 36, 36);
+  margin: 40px 40px 20px 40px;
+  border-radius: 10px;
+  /* background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.3),
     rgba(255, 255, 255, 0)
@@ -225,49 +228,36 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+.item__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.image-section {
+  background-size: cover;
+  background-position: center;
+  width: 170%;
+  height: 600px;
+  border-radius: 10px;
+  border: 2px solid rgb(175, 139, 39);
+  display: block;
 }
 
 .image-section1 {
   background-image: url("/ABOUT US/AboutUsImages/startup.webp");
-  background-size: cover;
-  background-position: center;
-  width: 400px;
-  height: 300px;
-  border-radius: 50%;
-  border: 1px solid white;
-  display: block;
 }
 
 .image-section2 {
   background-image: url("/ABOUT US/AboutUsImages/yoga.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 400px;
-  height: 300px;
-  border-radius: 50%;
-  border: 1px solid white;
-  display: block;
 }
 .image-section3 {
   background-image: url("/ABOUT US/AboutUsImages/different.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 400px;
-  height: 300px;
-  border-radius: 50%;
-  border: 1px solid white;
-  display: block;
 }
 .image-section4 {
   background-image: url("/ABOUT US/AboutUsImages/healthy.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 400px;
-  height: 300px;
-  border-radius: 50%;
-  border: 1px solid white;
-  display: block;
 }
 .image-section {
   margin: 20px;
@@ -283,15 +273,17 @@ article {
   line-height: 1.6;
 }
 article h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #f3be00;
 }
 article p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: white;
 }
-
+.material-symbols-outlined {
+  color: rgb(175, 139, 39);
+}
 .btn {
   margin-top: 35px;
 }
