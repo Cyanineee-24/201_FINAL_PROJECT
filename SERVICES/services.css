@@ -282,6 +282,7 @@ body {
 .about article p {
   font-size: 1rem;
   line-height: 1.6;
+  margin: 10px 0px;
 }
 
 .about .btn {
