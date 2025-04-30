@@ -4,13 +4,13 @@
   box-sizing: border-box;
   font-family: "Liter", sans-serif;
 }
-
+/* 
 html,
 body {
   height: 100%;
   width: 100%;
   background-color: #131313;
-}
+} */
 
 /* NAVBAR HEADER */
 .navbar {
