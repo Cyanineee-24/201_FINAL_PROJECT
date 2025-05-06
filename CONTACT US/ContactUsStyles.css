@@ -227,11 +227,9 @@ html, body
 .footer_wrapper1
 {
   display: flex;
-  text-align: center;
-  justify-content: center;
   flex-wrap: wrap;
-  column-gap: 100px;
-  row-gap: 50px;
+  justify-content: center;
+  text-align: center;
 }
 .footer_wrapper1 h3
 {
@@ -242,6 +240,7 @@ html, body
 .footer-col1
 {
   margin-top: 30px;
+  width: 300px;
 }
 .footer-col1 a
 {
@@ -258,6 +257,7 @@ html, body
 .footer-col2
 {
   margin-top: 30px;
+  width: 400px;
 }
 .footer-col2 button
 {
@@ -281,10 +281,11 @@ html, body
 .footer-col3
 {
   margin-top: 30px;
+  width: 300px;
 }
 form input
 {
-  width: 400px;
+  width: 300px;
   height: 45px;
   border-radius: 4px;
   text-align: center;

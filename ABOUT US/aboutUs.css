@@ -460,11 +460,9 @@ article p {
 .footer_wrapper1
 {
   display: flex;
-  text-align: center;
-  justify-content: center;
   flex-wrap: wrap;
-  column-gap: 100px;
-  row-gap: 50px;
+  justify-content: center;
+  text-align: center;
 }
 .footer_wrapper1 h3
 {
@@ -475,6 +473,7 @@ article p {
 .footer-col1
 {
   margin-top: 30px;
+  width: 300px;
 }
 .footer-col1 a
 {
@@ -491,6 +490,7 @@ article p {
 .footer-col2
 {
   margin-top: 30px;
+  width: 400px;
 }
 .footer-col2 button
 {
@@ -514,10 +514,11 @@ article p {
 .footer-col3
 {
   margin-top: 30px;
+  width: 300px;
 }
 form input
 {
-  width: 400px;
+  width: 300px;
   height: 45px;
   border-radius: 4px;
   text-align: center;
@@ -555,3 +556,4 @@ form button
   border-radius: 50%;
   margin-right: 20px;
 }
+
