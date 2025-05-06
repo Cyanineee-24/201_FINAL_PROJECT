@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm Payment</title>
+    <link rel="stylesheet" type="text/css" href="payment.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Liter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="row">
+          <div class="column">
+            <h3 class="title">Billing Address</h3>
+            <div class="input-box">
+              <span>Full Name : </span>
+              <input type="text" placeholder="e.g. Juan Dela Cruz" />
+            </div>
+            <div class="input-box">
+              <span>Email :</span>
+              <input
+                type="email"
+                name="clientEmail"
+                id="clientEmail"
+                placeholder="e.g. juandelacruz@example.com"
+              />
+            </div>
+            <div class="input-box">
+              <span>Email :</span>
+              <input
+                type="text"
+                name="clientAddress"
+                id="clientAddress"
+                placeholder="e.g. House No. - Street - Locality"
+              />
+            </div>
+            <div class="input-box">
+              <span>City :</span>
+              <input
+                type="text"
+                name="clientCity"
+                id="clientCity"
+                placeholder="e.g. Berlin"
+              />
+            </div>
+            <div class="flex">
+              <div class="input-box">
+                <span>State :</span>
+                <input
+                  type="number"
+                  name="clientState"
+                  id="clientState"
+                  placeholder="Germany"
+                />
+              </div>
+              <div class="input-box">
+                <span>Zip Code :</span>
+                <input
+                  type="number"
+                  name="clientZIP"
+                  id="clientZIP"
+                  placeholder="10115"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <h3 class="title">Payment</h3>
+            <div class="input-box">
+              <span>Cards Accepted : </span>
+              <img
+                src="/PAYMENT GATEWAY/paymentImages/PaymentMethods updated size (2).png"
+                alt=""
+                id="mastercard"
+              />
+            </div>
+            <div class="input-box">
+              <span>Name on Card :</span>
+              <input
+                type="text"
+                name="clientNameCard"
+                id="clientNameCard"
+                placeholder="Mr. Juan Dela Cruz"
+              />
+            </div>
+            <div class="input-box">
+              <span>Credit Card Number :</span>
+              <input
+                type="text"
+                name="clientCredit"
+                id="clientCredit"
+                placeholder="1111 2222 3333 4444"
+              />
+            </div>
+            <div class="input-box">
+              <span>Exp. Month :</span>
+              <input
+                type="text"
+                name="clientExpMonth"
+                id="clientExpMonth"
+                placeholder="August"
+              />
+            </div>
+            <div class="flex">
+              <div class="input-box">
+                <span>Exp. Year :</span>
+                <input
+                  type="number"
+                  name="clientExpYear"
+                  id="clientExpYear"
+                  placeholder="2027"
+                />
+              </div>
+              <div class="input-box">
+                <span>CVV :</span>
+                <input
+                  type="number"
+                  name="clientCVV"
+                  id="clientCVV"
+                  placeholder="123"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn" id="openPopup">Confirm</button>
+      </form>
+    </div>
+    <div class="confirm-popup" id="popup">
+      <div class="popup-inner">
+        <h2>Thank you for your purchase!</h2>
+        <p>
+          You can now start using FlexTrack right away! Remember to stay
+          consistent, stay motivated, and be the best version of yourself with
+          FlexTrack: Premium.
+        </p>
+        <button id="closePopup" class="btn">
+          <a href="/DRAFT/newHome.html">Return to Home Page</a>
+        </button>
+      </div>
+    </div>
+    <script src="payment.js"></script>
+  </body>
+</html>

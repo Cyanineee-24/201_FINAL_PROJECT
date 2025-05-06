@@ -507,50 +507,43 @@ li::marker {
 /* END NAVBAR */
 
 /* FOOTER */
-.footer-container
-{
+.footer-container {
   background-color: #242424;
   height: 100%;
   width: 100%;
   margin-top: 50px;
 }
-.footer_wrapper1
-{
+.footer_wrapper1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  gap: 40px;
 }
-.footer_wrapper1 h3
-{
+.footer_wrapper1 h3 {
   font-weight: 300;
   margin-bottom: 30px;
   letter-spacing: 2px;
 }
-.footer-col1
-{
+.footer-col1 {
   margin-top: 30px;
   width: 300px;
 }
-.footer-col1 a
-{
+.footer-col1 a {
   display: block;
   text-decoration: none;
   margin-bottom: 10px;
   color: white;
   transition: 0.2s;
 }
-.footer-col1 a:hover
-{
+.footer-col1 a:hover {
   color: #ec8d08;
 }
-.footer-col2
-{
+.footer-col2 {
   margin-top: 30px;
   width: 400px;
 }
-.footer-col2 button
-{
+.footer-col2 button {
   transition: 0.2s;
 }
 .footer-col2 button::before {
@@ -568,14 +561,12 @@ li::marker {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
 }
-.footer-col3
-{
+.footer-col3 {
   margin-top: 30px;
   width: 300px;
 }
-form input
-{
-  width: 300px;
+form input {
+  width: 70%;
   height: 45px;
   border-radius: 4px;
   text-align: center;
@@ -584,8 +575,7 @@ form input
   outline: none;
   border: none;
 }
-form button
-{
+form button {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
@@ -594,21 +584,18 @@ form button
   font-size: 15px;
   cursor: pointer;
 }
-.footer_wrapper2
-{
+.footer_wrapper2 {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin:auto;
+  margin: auto;
   margin-top: 50px;
   width: 50%;
 }
-.footer_wrapper2 p
-{
+.footer_wrapper2 p {
   margin-top: 20px;
 }
-.footer_wrapper2 img
-{
+.footer_wrapper2 img {
   height: 60px;
   border-radius: 50%;
   margin-right: 20px;
