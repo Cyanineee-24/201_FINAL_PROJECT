@@ -176,9 +176,11 @@ body {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  letter-spacing: 10px;
 }
 .header__content p {
   line-height: 2rem;
+  font-size: 1.2rem;
 }
 .header__content .section__description {
   margin-bottom: 2rem;
