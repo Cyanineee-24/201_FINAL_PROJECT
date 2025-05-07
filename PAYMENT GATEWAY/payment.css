@@ -75,6 +75,20 @@ form .row {
   cursor: pointer;
 }
 
+#closePopup {
+  width: auto;
+  padding: 12px;
+  background: #8175d3;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 17px;
+  color: white;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
 .btn a {
   text-decoration: none;
   color: white;

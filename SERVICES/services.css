@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Liter", sans-serif;
 }
 
 /* html,
@@ -148,6 +148,9 @@ body {
 }
 .slide-content * {
   max-width: 48%;
+}
+.slide-content h2 {
+  letter-spacing: 1px;
 }
 .slide-subtitle {
   font-size: 1rem;
