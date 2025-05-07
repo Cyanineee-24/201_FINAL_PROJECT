@@ -319,16 +319,20 @@ body {
 .explore__btn a {
   text-decoration: none;
   color: white;
-  text-transform: uppercase;
-  letter-spacing: 1-px;
+  cursor: pointer;
 }
 .explore__btn {
-  background-color: #ec8d08;
+  background-color: #242424;
+  cursor: pointer;
+  color: white;
   padding: 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
   margin: 20px 0px;
-  border: 1px solid white;
+  margin-bottom: 60px;
   transition: all 0.5s ease;
-  border-radius: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 .explore__btn::before {
   content: "";
@@ -339,6 +343,7 @@ body {
 .explore__btn:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 196, 0, 0.5);
+  background-color: #f3be00;
 }
 .explore__btn:hover::before {
   opacity: 1;
