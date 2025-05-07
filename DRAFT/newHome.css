@@ -345,6 +345,9 @@ body {
   box-shadow: 0 0 20px rgba(255, 196, 0, 0.5);
   background-color: #f3be00;
 }
+.explore__btn a:hover {
+  color: #000000;
+}
 .explore__btn:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
@@ -472,6 +475,7 @@ li::marker {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 196, 0, 0.5);
   background-color: #ec8d08;
+  color: black;
 }
 .footer-col2 button:hover::before {
   opacity: 1;
@@ -517,6 +521,7 @@ form button {
   margin-right: 20px;
 }
 
+/* FOOTER INTERACTION */
 .confirm-popup {
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
@@ -532,7 +537,6 @@ form button {
   justify-content: center;
 }
 
-/* FOOTER INTERACTION */
 .confirm-popup.open {
   opacity: 1;
   z-index: 10;
@@ -549,6 +553,7 @@ form button {
 
 .popup-inner h2 {
   letter-spacing: 1px;
+  color: rgba(243, 195, 100, 1);
 }
 
 .popup-inner p {
@@ -562,6 +567,12 @@ form button {
   margin: 10px 0px;
 }
 
+article p {
+  font-size: 1.2rem;
+}
+.checklist ul li {
+  font-size: 1.2rem;
+}
 /* media query */
 @media screen and (max-width: 960px) {
   body,
@@ -601,7 +612,7 @@ form button {
   }
 
   #navbar__logo {
-    padding-left: 20px;
+    font-size: 1.77rem;
   }
 
   .navbar__toggle .bar {
@@ -668,12 +679,12 @@ form button {
     width: 100%;
   }
   .header__item .header__content h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 1.4;
     letter-spacing: normal;
   }
   .header__item .header__content p {
-    font-size: 1rem;
+    font-size: 1, 2rem;
   }
   .header__stats p {
     line-height: 1.4;
@@ -711,5 +722,20 @@ form button {
   .popup-inner {
     width: 100%;
     margin: 10px;
+  }
+  .header__content .section__description {
+    margin-bottom: 2px;
+  }
+  .explore__btn a {
+    font-size: 1rem;
+  }
+  .explore__btn {
+    padding: 7px 20px 7px 20px;
+  }
+  article p {
+    font-size: 1.2rem;
+  }
+  .checklist ul li {
+    font-size: 1.2rem;
   }
 }

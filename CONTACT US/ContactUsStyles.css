@@ -319,7 +319,9 @@ textarea {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 196, 0, 0.5);
   background-color: #ec8d08;
+  color: black;
 }
+
 .footer-col2 button:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
@@ -398,13 +400,30 @@ textarea::placeholder {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 196, 0, 0.5);
   background-color: #f3be00;
+  color: black;
 }
+
 .explore__btn:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
 }
 
 /* FOOTER INTERACTION */
+.confirm-popup {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s, ease-in-out;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .confirm-popup.open {
   opacity: 1;
   z-index: 10;
@@ -412,16 +431,17 @@ textarea::placeholder {
 
 .popup-inner {
   background-color: #131313;
-  color: white;
   border-radius: 10px;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
   padding: 15px 25px;
   text-align: center;
   width: 30%;
+  color: white;
 }
 
 .popup-inner h2 {
   letter-spacing: 1px;
+  color: rgba(243, 195, 100, 1);
 }
 
 .popup-inner p {
@@ -434,7 +454,6 @@ textarea::placeholder {
   width: 100%;
   margin: 10px 0px;
 }
-
 /* media query */
 @media screen and (max-width: 960px) {
   body,
@@ -474,7 +493,7 @@ textarea::placeholder {
   }
 
   #navbar__logo {
-    padding-left: 20px;
+    font-size: 1.77rem;
   }
 
   .navbar__toggle .bar {
@@ -540,5 +559,9 @@ textarea::placeholder {
   }
   .footer-container {
     margin-top: 10px;
+  }
+  .popup-inner {
+    margin: 10px;
+    width: 100%;
   }
 }

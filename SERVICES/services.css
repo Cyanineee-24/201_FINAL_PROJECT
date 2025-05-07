@@ -275,6 +275,9 @@ body {
   box-shadow: 0 0 20px rgba(255, 196, 0, 0.5);
   background-color: #f3be00;
 }
+.explore__btn:hover a {
+  color: black;
+}
 .explore__btn:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
@@ -401,6 +404,7 @@ body {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 196, 0, 0.5);
   background-color: #ec8d08;
+  color: black;
 }
 .footer-col2 button:hover::before {
   opacity: 1;
@@ -479,6 +483,7 @@ form button {
 
 .popup-inner h2 {
   letter-spacing: 1px;
+  color: rgba(243, 195, 100, 1);
 }
 
 .popup-inner p {
@@ -531,7 +536,7 @@ form button {
   }
 
   #navbar__logo {
-    padding-left: 20px;
+    font-size: 1.77rem;
   }
 
   .navbar__toggle .bar {
@@ -608,5 +613,15 @@ form button {
   .image-section4 {
     margin-top: 50px;
     margin-bottom: 20px;
+  }
+  .popup-inner {
+    width: 100%;
+    margin: 10px;
+  }
+  .explore__btn a {
+    font-size: 1.2rem;
+  }
+  .explore__btn {
+    padding: 7px 20px 7px 20px;
   }
 }

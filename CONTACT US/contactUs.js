@@ -7,17 +7,37 @@ menu.addEventListener("click", function () {
   menuLinks.classList.toggle("active");
 });
 
-// FOOTER POPUP
-const openBtn = document.getElementById("openPopup");
+// FOOTER POPUP - SPECIFICALLY TARGET NEWSLETTER FORM ONLY
 const closeBtn = document.getElementById("closePopup");
 const modal = document.getElementById("popup");
-const form = document.querySelector("form");
+const newsletterForm = document.getElementById("newsLetterForm"); // Changed from querySelector
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  modal.classList.add("open");
-});
+// Only handle newsletter form
+if (newsletterForm) {
+  newsletterForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    modal.classList.add("open");
+    // Optional: Clear the form after submission
+    newsletterForm.reset();
+  });
+}
 
-closeBtn.addEventListener("click", () => {
-  modal.classList.remove("open");
-});
+// Handle contact form separately
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    // Handle contact form submission (AJAX, etc.)
+    console.log("Contact form submitted");
+    // Optional: Clear the form after submission
+    contactForm.reset();
+    alert("Thank you! We'll get back to you as soon as we can.");
+  });
+}
+
+// Close popup handler
+if (closeBtn) {
+  closeBtn.addEventListener("click", function () {
+    modal.classList.remove("open");
+  });
+}
