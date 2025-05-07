@@ -547,7 +547,7 @@ textarea::placeholder {
   }
   .container .contactInfo {
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     order: 2;
   }
   .container .contactInfo .box .icon .material-symbols-outlined {

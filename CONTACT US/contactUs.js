@@ -10,7 +10,7 @@ menu.addEventListener("click", function () {
 // FOOTER POPUP - SPECIFICALLY TARGET NEWSLETTER FORM ONLY
 const closeBtn = document.getElementById("closePopup");
 const modal = document.getElementById("popup");
-const newsletterForm = document.getElementById("newsLetterForm"); // Changed from querySelector
+const newsletterForm = document.getElementById("newsLetterForm");
 
 // Only handle newsletter form
 if (newsletterForm) {
