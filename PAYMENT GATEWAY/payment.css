@@ -142,3 +142,9 @@ img {
   line-height: 1.6rem;
   margin: 10px 0px;
 }
+
+@media screen and (max-width: 425px) {
+  .container form {
+    border-radius: 0;
+  }
+}
