@@ -4,9 +4,11 @@
   box-sizing: border-box;
   font-family: "Liter", sans-serif;
 }
+
 .main {
   background: #131313;
 }
+
 .navbar {
   background: #131313;
   height: 80px;
@@ -17,6 +19,7 @@
   top: 0;
   z-index: 999;
 }
+
 .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -27,10 +30,12 @@
   margin: 0 auto;
   padding: 0 10px;
 }
+
 .navbar__menu li {
   list-style: none;
   display: inline-block;
 }
+
 .navbar__menu li a {
   text-decoration: none;
   color: white;
@@ -43,6 +48,7 @@
   margin-right: 10px;
   padding: 20px;
 }
+
 .navbar__menu li a:hover {
   /* background-image:linear-gradient(to top, #e5e4e2 0%, #ffd700 100%);
        */
@@ -59,6 +65,7 @@
   color: #000000;
   transition: all 0.3s ease;
 }
+
 #navbar__logo {
   background-color: rgb(227, 34, 34);
   text-decoration: none;
@@ -86,6 +93,7 @@
   align-items: center;
   text-align: center;
 }
+
 .navbar__item {
   height: 100%;
 }
@@ -113,12 +121,14 @@
   filter: grayscale(20%) blur(2px);
   z-index: 1;
 }
+
 .contact .contact-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   z-index: 2;
 }
+
 .contact .content {
   width: 100%;
   text-align: center;
@@ -127,6 +137,7 @@
 .content-header .material-symbols-outlined {
   color: rgb(175, 139, 39);
 }
+
 .content-header {
   display: flex;
   align-items: center;
@@ -276,6 +287,7 @@ textarea {
   width: 100%;
   padding-bottom: 40px;
 }
+
 .footer_wrapper1 {
   display: flex;
   flex-wrap: wrap;
@@ -283,15 +295,18 @@ textarea {
   text-align: center;
   gap: 40px;
 }
+
 .footer_wrapper1 h3 {
   font-weight: 300;
   margin-bottom: 30px;
   letter-spacing: 2px;
 }
+
 .footer-col1 {
   margin-top: 30px;
   width: 300px;
 }
+
 .footer-col1 a {
   display: block;
   text-decoration: none;
@@ -299,22 +314,27 @@ textarea {
   color: white;
   transition: 0.2s;
 }
+
 .footer-col1 a:hover {
   color: #ec8d08;
 }
+
 .footer-col2 {
   margin-top: 30px;
   width: 400px;
 }
+
 .footer-col2 button {
   transition: 0.2s;
 }
+
 .footer-col2 button::before {
   content: "";
   position: absolute;
   transition: all 0.5s ease;
   opacity: 0;
 }
+
 .footer-col2 button:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 196, 0, 0.5);
@@ -322,14 +342,17 @@ textarea {
   color: black;
 }
 
+
 .footer-col2 button:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
 }
+
 .footer-col3 {
   margin-top: 30px;
   width: 300px;
 }
+
 .footer-container form input {
   width: 300px;
   height: 45px;
@@ -340,6 +363,7 @@ textarea {
   outline: none;
   border: none;
 }
+
 .footer-container form button {
   background: transparent;
   border: 2px solid #fff;
@@ -349,6 +373,7 @@ textarea {
   font-size: 15px;
   cursor: pointer;
 }
+
 .footer_wrapper2 {
   display: flex;
   text-align: center;
@@ -357,9 +382,11 @@ textarea {
   margin-top: 50px;
   width: 50%;
 }
+
 .footer_wrapper2 p {
   margin-top: 20px;
 }
+
 .footer_wrapper2 img {
   height: 60px;
   border-radius: 50%;
@@ -377,6 +404,7 @@ textarea::placeholder {
   color: white;
   cursor: pointer;
 }
+
 .explore__btn {
   background-color: #242424;
   cursor: pointer;
@@ -390,12 +418,14 @@ textarea::placeholder {
   border: 1px solid white;
   border-radius: 5px;
 }
+
 .explore__btn::before {
   content: "";
   position: absolute;
   transition: all 0.5s ease;
   opacity: 0;
 }
+
 .explore__btn:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 196, 0, 0.5);
@@ -454,12 +484,14 @@ textarea::placeholder {
   width: 100%;
   margin: 10px 0px;
 }
+
 /* media query */
 @media screen and (max-width: 960px) {
   body,
   html {
     overflow-x: hidden;
   }
+
   .navbar__container {
     justify-content: space-between;
     height: 80px;
@@ -482,6 +514,7 @@ textarea::placeholder {
     z-index: -1;
     background: #131313;
   }
+
   .navbar__menu.active {
     background: #131313;
     top: 100%;
@@ -503,22 +536,26 @@ textarea::placeholder {
     transition: all 0.3s ease-in-out;
     background: #fff;
   }
+
   .navbar__item {
     width: 100%;
     margin: 10px 0px;
   }
+
   .navbar__links {
     text-align: center;
     padding: 2rem;
     width: 100%;
     display: table;
   }
+
   #mobile-menu {
     position: absolute;
     top: 20%;
     right: 5%;
     transform: translate(5%, 20%);
   }
+
   .navbar__toggle .bar {
     display: block;
     cursor: pointer;
@@ -550,16 +587,20 @@ textarea::placeholder {
     padding: 0px;
     order: 2;
   }
+
   .container .contactInfo .box .icon .material-symbols-outlined {
     font-size: 30px;
   }
+
   .contactForm {
     width: 100%;
     order: 1;
   }
+
   .footer-container {
     margin-top: 10px;
   }
+  
   .popup-inner {
     margin: 10px;
     width: 100%;

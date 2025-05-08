@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Liter", sans-serif;
 }
+
 /* 
 html,
 body {
@@ -23,6 +24,7 @@ body {
   top: 0;
   z-index: 999;
 }
+
 .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -33,10 +35,12 @@ body {
   margin: 0 auto;
   padding: 0 10px;
 }
+
 .navbar__menu li {
   list-style: none;
   display: inline-block;
 }
+
 .navbar__menu li a {
   text-decoration: none;
   color: white;
@@ -49,6 +53,7 @@ body {
   margin-right: 10px;
   padding: 20px;
 }
+
 .navbar__menu li a:hover {
   /* background-image:linear-gradient(to top, #e5e4e2 0%, #ffd700 100%);
      */
@@ -65,6 +70,7 @@ body {
   color: #000000;
   transition: all 0.3s ease;
 }
+
 #navbar__logo {
   background-color: rgb(227, 34, 34);
   text-decoration: none;
@@ -92,6 +98,7 @@ body {
   align-items: center;
   text-align: center;
 }
+
 .navbar__item {
   height: 100%;
 }
@@ -124,6 +131,7 @@ body {
   display: inline-block; /* Ensures background wraps only the text */
   letter-spacing: 15px;
 }
+
 .about {
   width: auto;
   height: auto;
@@ -147,12 +155,14 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
 }
+
 .item__header {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
+
 .image-section {
   background-size: cover;
   background-position: center;
@@ -194,22 +204,27 @@ article h3 {
   font-weight: 500;
   color: #f3be00;
 }
+
 article p {
   font-size: 1.3rem;
   color: white;
 }
+
 .material-symbols-outlined {
   color: rgb(175, 139, 39);
 }
+
 .btn {
   margin-top: 35px;
   width: 100%;
 }
+
 .explore__btn a {
   text-decoration: none;
   color: white;
   cursor: pointer;
 }
+
 .explore__btn {
   background-color: #242424;
   cursor: pointer;
@@ -223,20 +238,24 @@ article p {
   border: 1px solid white;
   border-radius: 5px;
 }
+
 .explore__btn::before {
   content: "";
   position: absolute;
   transition: all 0.5s ease;
   opacity: 0;
 }
+
 .explore__btn:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 196, 0, 0.5);
   background-color: #f3be00;
 }
+
 .explore__btn:hover a {
   color: black;
 }
+
 .explore__btn:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
@@ -245,6 +264,7 @@ article p {
 .aboutUs__main h3 {
   margin-bottom: 20px;
 }
+
 /* END OF ABOUT US MAIN */
 
 /* END NAVBAR */
@@ -257,6 +277,7 @@ article p {
   margin-top: 50px;
   padding-bottom: 40px;
 }
+
 .footer_wrapper1 {
   display: flex;
   flex-wrap: wrap;
@@ -264,15 +285,18 @@ article p {
   text-align: center;
   gap: 40px;
 }
+
 .footer_wrapper1 h3 {
   font-weight: 300;
   margin-bottom: 30px;
   letter-spacing: 2px;
 }
+
 .footer-col1 {
   margin-top: 30px;
   width: 300px;
 }
+
 .footer-col1 a {
   display: block;
   text-decoration: none;
@@ -280,36 +304,44 @@ article p {
   color: white;
   transition: 0.2s;
 }
+
 .footer-col1 a:hover {
   color: #ec8d08;
 }
+
 .footer-col2 {
   margin-top: 30px;
   width: 400px;
 }
+
 .footer-col2 button {
   transition: 0.2s;
 }
+
 .footer-col2 button::before {
   content: "";
   position: absolute;
   transition: all 0.5s ease;
   opacity: 0;
 }
+
 .footer-col2 button:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(255, 196, 0, 0.5);
   background-color: #ec8d08;
   color: black;
 }
+
 .footer-col2 button:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
 }
+
 .footer-col3 {
   margin-top: 30px;
   width: 300px;
 }
+
 form input {
   width: 300px;
   height: 45px;
@@ -320,6 +352,7 @@ form input {
   outline: none;
   border: none;
 }
+
 form button {
   background: transparent;
   border: 2px solid #fff;
@@ -329,6 +362,7 @@ form button {
   font-size: 15px;
   cursor: pointer;
 }
+
 .footer_wrapper2 {
   display: flex;
   text-align: center;
@@ -337,9 +371,11 @@ form button {
   margin-top: 50px;
   width: 50%;
 }
+
 .footer_wrapper2 p {
   margin-top: 20px;
 }
+
 .footer_wrapper2 img {
   height: 60px;
   border-radius: 50%;
@@ -421,6 +457,7 @@ form button {
     z-index: -1;
     background: #131313;
   }
+
   .navbar__menu.active {
     background: #131313;
     top: 100%;
@@ -442,22 +479,26 @@ form button {
     transition: all 0.3s ease-in-out;
     background: #fff;
   }
+
   .navbar__item {
     width: 100%;
     margin: 10px 0px;
   }
+
   .navbar__links {
     text-align: center;
     padding: 2rem;
     width: 100%;
     display: table;
   }
+
   #mobile-menu {
     position: absolute;
     top: 20%;
     right: 5%;
     transform: translate(5%, 20%);
   }
+
   .navbar__toggle .bar {
     display: block;
     cursor: pointer;
@@ -480,26 +521,32 @@ form button {
   .title-wrapper {
     margin-top: 15px;
   }
+
   .title h1 {
     font-size: 28px;
     text-align: center;
   }
+
   h2 {
     margin: 10px 0px 20px 0px;
   }
+
   .image-section {
     height: 200px;
     width: 100%;
     margin: 10px 0px;
   }
+
   .about {
     flex-direction: column;
     margin: 10px 0px 10px 0px;
     padding: 10px;
   }
+
   .about h3 {
     font-size: 1.5rem;
   }
+
   .about p {
     font-size: 1rem;
   }
@@ -507,6 +554,7 @@ form button {
   article {
     margin-top: 10px;
   }
+
   .image-section2,
   .image-section4 {
     margin-top: 10px;
@@ -517,9 +565,11 @@ form button {
     width: 100%;
     margin: 10px;
   }
+  
   .explore__btn a {
     font-size: 1rem;
   }
+
   .explore__btn {
     padding: 7px 20px 7px 20px;
   }
